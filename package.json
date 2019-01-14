@@ -1,0 +1,74 @@
+{
+  "_from": "ssh-manager",
+  "_id": "ssh-manager@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-hWHoMbPYgyXcWwycJ8dpoGP4EDM=",
+  "_location": "/ssh-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ssh-manager",
+    "name": "ssh-manager",
+    "escapedName": "ssh-manager",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/ssh-manager/-/ssh-manager-1.1.0.tgz",
+  "_shasum": "8561e831b3d88325dc5b0c9c27c769a063f81033",
+  "_spec": "ssh-manager",
+  "_where": "/Users/envolt",
+  "author": {
+    "name": "Alejandro Santiago Nieto"
+  },
+  "bin": {
+    "ssh-manager": "lib/cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/alemures/ssh-manager/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "2.x.x",
+    "child_pty": "3.x.x",
+    "cli-table": "0.3.x",
+    "colors": "1.x.x",
+    "papaparse": "4.x.x",
+    "utjs": "2.x.x",
+    "yargs": "10.x.x"
+  },
+  "deprecated": false,
+  "description": "A powerful ssh connections manager.",
+  "devDependencies": {
+    "chai": "4.x.x",
+    "jscs": "3.x.x",
+    "jshint": "2.x.x",
+    "mocha": "4.x.x"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "servers"
+  ],
+  "homepage": "https://github.com/alemures/ssh-manager#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ssh-manager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemures/ssh-manager.git"
+  },
+  "scripts": {
+    "check": "npm run test && npm run jshint && npm run jscs",
+    "jscs": "jscs index.js lib/*.js test/*.js",
+    "jscs:fix": "jscs --fix index.js lib/*.js test/*.js",
+    "jshint": "jshint index.js lib/*.js test/*.js",
+    "start": "node index.js",
+    "test": "mocha test/*.js"
+  },
+  "version": "1.1.0"
+}
