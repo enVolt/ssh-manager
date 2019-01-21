@@ -5,5 +5,13 @@
     "host": "54.54.56.56",
     "pem": "example.pem",
     "pems": ["example.pem", "alsothis.pem"]
+  },
+  {
+    "name": "Jumphost",
+    "user": "centos",
+    "host": "54.54.56.56",
+    "pem": "example.pem",
+    "pems": "example.pem",
+    "secondhost": "ssh root@host-2"
   }
 ]
