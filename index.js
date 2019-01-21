@@ -124,9 +124,13 @@ function populateTable() {
 
   for (i = 0; i < serversLength; i++) {
     server = servers[i];
+    let host = server.host;
+    if (server.secondHost) {
+      host = `${host} (${colors.yellow.underline(server.secondHost)})`;
+    }
     table.push([
       colors.cyan.bold(server.name), server.id,
-      server.user, server.host, ut.paddingBoth('' + server.port, ' ',
+      server.user, host, ut.paddingBoth('' + server.port, ' ',
       portHeaderLength), server.auth.pemFileName
     ]);
   }
