@@ -21,8 +21,8 @@ var headers = {
   // status: 'status',
   user: 'user',
   host: 'host',
-  port: 'port',
-  auth: 'auth'
+  port: 'port'
+  //auth: 'auth'
 };
 
 var table = new Table({
@@ -38,11 +38,6 @@ var table = new Table({
 // Arguments config
 
 var argv = yargs.usage('Usage: $0 [options]')
-    .alias('f', 'file')
-    .nargs('f', 1)
-    .describe('f', 'Provide a json or csv file with servers')
-    .string('f')
-
     .alias('o', 'order')
     .nargs('o', 1)
     .string('o')
@@ -53,16 +48,6 @@ var argv = yargs.usage('Usage: $0 [options]')
     .nargs('s', 1)
     .string('s')
     .describe('s', 'Specify the server name or id to connect')
-
-    .alias('n', 'nocheck')
-    .describe('n', 'Disable the server connection checkings')
-    .nargs('n', 0)
-    .boolean('n')
-
-    .alias('t', 'timeout')
-    .nargs('t', 1)
-    .default('t', 500)
-    .describe('t', 'Timeout for server checkings in milliseconds')
 
     .help('h')
     .alias('h', 'help')
