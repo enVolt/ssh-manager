@@ -37,7 +37,7 @@
     "child_pty": "3.x.x",
     "cli-table": "0.3.x",
     "colors": "1.x.x",
-    "papaparse": "4.x.x",
+    "papaparse": "5.x.x",
     "utjs": "2.x.x",
     "yargs": "10.x.x"
   },
