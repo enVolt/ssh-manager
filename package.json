@@ -33,7 +33,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "async": "2.x.x",
+    "async": "3.x.x",
     "child_pty": "3.x.x",
     "cli-table": "0.3.x",
     "colors": "1.x.x",
